@@ -12,6 +12,7 @@ cows = input()
 
 # IDEA 1 (fails on > test 3): every cow after current cow needs to exit before current cow 
 # => stack
+# O(n)
 
 # crossings = []
 # for c in cows:
@@ -25,6 +26,7 @@ cows = input()
 # print(len(set(crossings)) // 2)
 
 # IDEA 2: iterate over all possible pairs to see if they cross
+# O(n^4)
 count = 0
 for i, a in enumerate(cows):
     end = cows.rfind(a)
