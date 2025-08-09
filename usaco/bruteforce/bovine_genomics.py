@@ -10,17 +10,13 @@ def rl():
 
 n, m = rl()
 
-spotty_genomes = [[None for _ in range(m)] for _ in range(n)]
+spotty_genomes = []
 for i in range(n):
-    line = input()
-    for j in range(m):
-        spotty_genomes[i][j] = line[j]
+    spotty_genomes.append(input())
 
-nspotty_genomes = [[None for _ in range(m)] for _ in range(n)]
+nspotty_genomes = []
 for i in range(n):
-    line = input()
-    for j in range(m):
-        nspotty_genomes[i][j] = line[j]
+    nspotty_genomes.append(input())
 
 # IDEA: if a spotty genome contains a char from the nspotty genomes then it can't be used for prediction!
 good_count = 0
