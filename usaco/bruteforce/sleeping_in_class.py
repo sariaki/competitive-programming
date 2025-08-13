@@ -1,6 +1,5 @@
 # https://usaco.org/index.php?page=viewproblem2&cpid=1203
 import sys
-from math import sqrt
 
 sys.setrecursionlimit(5000)
 input = lambda: sys.stdin.readline().strip()
